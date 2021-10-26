@@ -11,12 +11,12 @@ git clone https://github.com/IHatePineapples/config/
 ```
 OR
 
-Download a single file:
+Download a single config file:
 
 ```
 wget https://github.com/IHatePineapples/config/<.file>
 ```
-Move the .config file to the correct directories: (e.g.)
+Move the config file to the correct directory: (e.g.)
 
 ```
 git clone https://github.com/IHatePineapples/config/
