@@ -1,4 +1,4 @@
-# config
+# Dotfiles
 
 All of my personal . configuration files for GNU/linux .
 
