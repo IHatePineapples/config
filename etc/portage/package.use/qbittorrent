@@ -1,0 +1,3 @@
+net-p2p/qbittorrent -dbus -debug -webui
+dev-libs/boost -bzip2 -zlib
+

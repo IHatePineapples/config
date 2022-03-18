@@ -1,0 +1,9 @@
+app-accessibility/at-spi2-core -X
+app-crypt/gpgme -qt5 -python -cxx
+dev-qt/qtgui -dbus
+dev-qt/qtwidgets -X -dbus -gtk
+app-crypt/pinentry -gtk -qt5
+app-text/poppler -cxx -qt5
+net-print/cups -X -dbus
+net-print/cups-filters -dbus
+app-text/ghostscript -cups -dbus -gtk
