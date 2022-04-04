@@ -1,6 +1,6 @@
 # Dotfiles
 
-All of my personal . configuration files for GNU/linux .
+All of my personal config.  files for GNU/linux
 
 # Installation   
 
