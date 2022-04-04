@@ -6,7 +6,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle :compinstall filename '/home/lost/.zshrc'
+zstyle :compinstall filename '/root/.zshrc'
 
 
 
@@ -22,7 +22,7 @@ unsetopt beep extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
 autoload -U colors && colors 
-PS1="%B%{$fg[red]%}[%{$fg[red]%}%n%{$fg[red]%}@%{$fg[red]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[red]%}%n%{$fg[red]%}@%{$fg[red]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}#%b "
 
 
 #if [[ -z $DISPLAY ]] && (( $EUID != 0 )) {
@@ -40,10 +40,12 @@ export LS_COLORS
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 
 #alias ls="ls --color=auto"
 alias ls="ls --color=auto -lAh"
-
-
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh        
-
+# GENTOO
 alias grub-update="grub-mkconfig -o /boot/grub/grub.cfg"
 alias grub-reinstall="grub-install --target=x86_64-efi --efi-directory=/boot"
 alias emerge="emerge --ask --verbose --tree --update --deep --with-bdeps=y --newuse"
+alias make="make -j12"
+
+ZSH_HIGHLIGHT_MAXLENGTH=512
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh        
