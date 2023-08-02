@@ -1,4 +1,4 @@
 # required by www-client/firefox-91.6.0::gentoo[system-libvpx]
 # required by www-client/firefox (argument)
 media-libs/libvpx postproc
-www-client/firefox -wifi -dbus -clang
+www-client/firefox -wifi -dbus lto pgo

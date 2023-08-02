@@ -1,9 +1,14 @@
-sys-apps/dbus -X
 x11-base/xorg-server -minimal
 x11-misc/xdg-utils -dbus
 app-admin/sysklogd logger
 sys-process/psmisc -X
-sys-apps/lshw -gtk
-sys-auth/elogind -cgroup-hybrid
-app-portage/portage-utils -qmanifest -qtegrity
+sys-apps/dbus -X
 sys-apps/groff -X
+sys-apps/lshw -gtk
+sys-apps/util-linux  
+sys-auth/elogind -cgroup-hybrid
+
+app-portage/portage-utils -qmanifest -qtegrity
+app-portage/pfl -network-cron
+
+sys-apps/qingy -gpm

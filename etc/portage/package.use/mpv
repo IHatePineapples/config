@@ -1,1 +1,1 @@
-media-video/mpv -cdda -lua -uchardet 
+media-video/mpv -cdda -lua -uchardet cli

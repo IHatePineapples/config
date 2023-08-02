@@ -1,0 +1,3 @@
+media-libs/libpng apng
+dev-libs/libsodium -minimal
+sys-libs/pam test

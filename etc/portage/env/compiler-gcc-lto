@@ -1,0 +1,14 @@
+LDFLAGS=""
+COMMON_FLAGS="-march=native -O2 -pipe -D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fstack-clash-protection -fexceptions -fstack-protector-strong -fcf-protection -fpie -fpic -ftree-vectorize -fomit-frame-pointer"
+
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+
+CC="gcc"
+CXX="g++"
+
+
+AR="gcc-ar"
+NM="gcc-nm"
+RANLIB="gcc-ranlib"
+

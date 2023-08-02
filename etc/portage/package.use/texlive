@@ -1,0 +1,2 @@
+app-text/texlive -cjk -music -xml graphics science png -games -tex2html -pdfannotextractor
+

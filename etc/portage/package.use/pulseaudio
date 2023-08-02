@@ -1,1 +1,1 @@
-media-sound/pulseaudio -gtk -dbus
+media-sound/pulseaudio -gtk -dbus daemon

@@ -1,0 +1,4 @@
+# required by net-misc/teamviewer-15.42.4::gentoo
+# required by teamviewer (argument)
+>=sys-libs/zlib-1.2.13-r1 minizip
+

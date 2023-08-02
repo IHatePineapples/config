@@ -1,1 +1,4 @@
-<dev-lang/python-3.10 -sqlite -wininst -libedit
+<dev-lang/python-3.10 -wininst -libedit -test 
+
+
+dev-lang/python -test -libedit -wininst 

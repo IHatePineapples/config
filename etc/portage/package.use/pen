@@ -1,0 +1,6 @@
+net-wireless/aircrack-ng -sqlite -pcre -netlink -experimental 
+
+# required by net-wireless/aircrack-ng-1.6_p20200722-r1::gentoo[airdrop-ng]
+# required by net-wireless/aircrack-ng (argument)
+net-wireless/lorcon python
+sys-apps/hwloc -X -cairo -svg -xml

@@ -1,0 +1,118 @@
+general {
+    output_format = "i3bar"
+    colors = true
+    color_good = "#50FA7B"
+    color_degraded = "#F1FA8C"
+    color_bad = "#FF5555"
+    interval = 15 
+
+}
+
+#order += "ipv6"
+#order += "run_watch DHCP"
+#order += "run_watch VPNC"
+#order += "path_exists VPN"
+order += "ethernet enp0s25"
+order += "ethernet enp0s20u2"
+order += "wireless wlp4s0"
+order += "volume master"
+order += "memory"
+order += "disk /"
+order += "load"
+order += "cpu_temperature 0"
+order += "battery 0"
+order += "tztime local"
+#order += "tztime berlin"
+order += "read_file uptime"
+
+wireless wlp4s0 {
+            format_up = "%essid->[%quality,%ip]"
+            format_down = ""
+}
+
+
+#wireless wlp4s01 {
+#            format_up = "W: (%quality at %essid, %bitrate) %ip"
+#            format_down = "W :( "
+#}
+
+ethernet enp0s25 {
+            format_up = "%ip->%speed"
+            format_down = ""
+}
+ethernet enp0s20u2 {
+            format_up = "=) %ip"
+            format_down = ""
+}
+
+
+battery 0 {
+            format = "%status %percentage"
+            format_down = ":("
+            status_chr = "UwU"
+            status_bat = ">_<"
+            status_unk = "o_O"
+            status_full = ":D"
+            path = "/sys/class/power_supply/BAT0/uevent"
+            low_threshold = 49
+}
+
+#run_watch DHCP {
+#            pidfile = "/var/run/dhclient*.pid"
+#}
+
+#run_watch VPNC {
+#            # file containing the PID of a vpnc process
+#            pidfile = "/var/run/vpnc/pid"
+#}
+
+#path_exists VPN {
+            # path exists when a VPN tunnel launched by nmcli/nm-applet is active
+#            path = "/proc/sys/net/ipv4/conf/tun0"
+#}
+
+tztime local {
+            #format = "%Y-%m-%d %H:%M:%S"
+            format = "%H:%M:%S %a %d-%m-%Y"
+            #hide_if_equals_localtime = true
+}
+
+tztime berlin {
+            format = "%Y-%m-%d %H:%M:%S %Z"
+            timezone = "Europe/Berlin"
+}
+
+load {
+            format = "%1min"
+}
+
+cpu_temperature 0 {
+            format = "%degrees°C"
+            path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp1_input"
+}
+
+memory {
+            format = "%used"
+            threshold_degraded = "10%"
+            format_degraded = "D: %free"
+}
+
+disk "/" {
+            format = "%free"
+}
+
+#read_file uptime {
+#            path = "/proc/uptime"
+#}
+
+volume master {
+            #format = ":v %volume"
+            format = "♪: %volume"
+            #format_down = "x_x"
+            #format_muted = ":X (%volume)"
+            format_muted = "♪: (%volume)"
+            device = "default"
+            mixer = "Master"
+            mixer_idx = 0
+}
+

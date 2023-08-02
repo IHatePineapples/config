@@ -1,1 +1,1 @@
-app-editors/vim -minimal -X terminal python
+app-editors/vim -minimal -X terminal python -sound
